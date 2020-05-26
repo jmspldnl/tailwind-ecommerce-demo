@@ -1,0 +1,16 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+header nav ul li > ul {
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+  z-index: 99;
+}
+
+p {
+  @apply my-4
+}
