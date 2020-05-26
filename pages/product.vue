@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col my-4">
-    <div class="flex">
-      <div class="box-border p-4 w-1/2">
+    <div class="flex flex-col md:flex-row">
+      <div class="box-border p-4 w-full md:w-1/2">
         <div class="bg-gray-100 relative" style="padding-bottom:100%">
           <img class="absolute inset-0 h-full w-full object-cover" />
         </div>
       </div>
-      <div class="box-border p-4 w-1/2">
+      <div class="box-border p-4 w-full md:w-1/2">
         <h2 class="text-2xl">Product Name</h2>
         <div class="my-4">
           <p>

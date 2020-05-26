@@ -32,7 +32,9 @@
               </svg>
             </button>
           </div>
-          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div
+            class="w-full block flex-grow hidden lg:flex lg:items-center lg:w-auto"
+          >
             <ul class="text-sm lg:flex-grow flex">
               <li
                 v-for="(item, i) in items"
@@ -71,9 +73,13 @@
       <nuxt />
     </div>
     <footer class="bg-gray-300 mt-auto">
-      <div class="container mx-auto px-4 py-10 ">
-        <div class="flex -mx-4">
-          <div v-for="i in 3" :key="i" class="box-content px-4 w-1/4">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex flex-wrap -mx-4">
+          <div
+            v-for="i in 3"
+            :key="i"
+            class="my-4 px-4 w-full md:w-1/2 xl:w-1/4"
+          >
             <h6 class="text-lg text-gray-800 font-bold uppercase mb-4">
               Heading
             </h6>
@@ -87,7 +93,7 @@
               </li>
             </ul>
           </div>
-          <div class="box-content px-4 w-1/4">
+          <div class="my-4 px-4 w-full md:w-1/2 xl:w-1/4">
             <h6 class="text-lg text-gray-800 font-bold uppercase mb-4">
               Newsletter Signup
             </h6>
@@ -142,8 +148,6 @@ export default {
       }
       this.items.push(item)
     }
-    /* eslint-disable */
-    console.log(this.items)
   }
 }
 </script>
